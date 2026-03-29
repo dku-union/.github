@@ -32,11 +32,10 @@ Union App (iOS/Android)
 
 | 레포 | 설명 | 기술 |
 |------|------|------|
+| [union-ios](https://github.com/dku-union/union-ios) | iOS 슈퍼앱 | Swift, SwiftUI, TCA |
 | [union-sdk](https://github.com/dku-union/union-sdk) | Bridge SDK + CLI 도구 | TypeScript, npm workspaces |
-| union-ios | iOS 슈퍼앱 | Swift, SwiftUI, TCA |
-| union-backend | 백엔드 API | Spring Boot |
-| union-publisher | 퍼블리셔 대시보드 | Next.js |
-| union-admin | 관리자 대시보드 | Next.js |
+| [union-app-backend](https://github.com/dku-union/union-app-backend) | 백엔드 API | Spring Boot |
+| [union-dashboard](https://github.com/dku-union/union-dashboard) | 퍼블리셔 + 관리자 대시보드 | Next.js |
 
 ## 기술 스택
 
@@ -46,19 +45,18 @@ Union App (iOS/Android)
 | Bridge SDK | TypeScript / postMessage 프로토콜 |
 | CLI | TypeScript / Commander.js / Vite |
 | Backend | Spring Boot / PostgreSQL / Redis |
-| Publisher Dashboard | Next.js |
-| Admin Dashboard | Next.js |
+| Dashboard | Next.js |
 | 미니앱 런타임 | React → WebView |
 | 인증 | OAuth 2.0 + mTLS |
 | 배포 | CDN (정적 번들 서빙) |
 
 ## 팀원
 
-| 이름 | 역할 | 담당 |
-|------|------|------|
-| 송준서 | App Frontend + SDK | iOS 앱 (SwiftUI/TCA), Bridge SDK, CLI |
-| 조성빈 | Backend | Spring Boot API 서버 |
-| 이용찬 | Publisher Frontend | 퍼블리셔 대시보드 (Next.js) |
-| 이장원 | Admin Frontend | 관리자 대시보드 (Next.js) |
+| 이름 | GitHub | 역할 | 담당 |
+|------|--------|------|------|
+| 송준서 (팀장) | [@JunSeo99](https://github.com/JunSeo99) | App Frontend + SDK | iOS 앱 (SwiftUI/TCA), Bridge SDK, CLI |
+| 조성빈 | [@ricky00](https://github.com/ricky00) | Backend | Spring Boot API 서버 |
+| 이용찬 | [@lee-y-ch](https://github.com/lee-y-ch) | Publisher Frontend | 퍼블리셔 대시보드 (Next.js) |
+| 이장원 | [@jangwonii](https://github.com/jangwonii) | Admin Frontend | 관리자 대시보드 (Next.js) |
 
 > 단국대학교 소프트웨어학과 캡스톤디자인
