@@ -59,29 +59,4 @@ Union App (iOS/Android)
 | 이용찬 | [@lee-y-ch](https://github.com/lee-y-ch) | Publisher Frontend | 퍼블리셔 대시보드 (Next.js) |
 | 이장원 | [@jangwonii](https://github.com/jangwonii) | Admin Frontend | 관리자 대시보드 (Next.js) |
 
-<details>
-<summary><b>GitHub Stats</b></summary>
-<br>
-
-<table>
-<tr>
-<td align="center"><b>송준서</b></td>
-<td align="center"><b>조성빈</b></td>
-</tr>
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=JunSeo99&show_icons=true&theme=default&hide_title=true&hide_rank=true&card_width=300" width="350"></td>
-<td><img src="https://github-readme-stats.vercel.app/api?username=ricky00&show_icons=true&theme=default&hide_title=true&hide_rank=true&card_width=300" width="350"></td>
-</tr>
-<tr>
-<td align="center"><b>이용찬</b></td>
-<td align="center"><b>이장원</b></td>
-</tr>
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=lee-y-ch&show_icons=true&theme=default&hide_title=true&hide_rank=true&card_width=300" width="350"></td>
-<td><img src="https://github-readme-stats.vercel.app/api?username=jangwonii&show_icons=true&theme=default&hide_title=true&hide_rank=true&card_width=300" width="350"></td>
-</tr>
-</table>
-
-</details>
-
 > 단국대학교 소프트웨어학과 캡스톤디자인
