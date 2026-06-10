@@ -1,8 +1,21 @@
+<div align="center">
+
 # Union (유니온)
 
 **대학생 전용 미니앱 슈퍼앱 플랫폼** — 단국대학교 캡스톤디자인 프로젝트
 
-퍼블리셔(개발자, 학생회, 동아리)가 React 기반 미니앱을 만들면, 대학생 사용자들이 하나의 앱 안에서 다양한 서비스를 이용할 수 있습니다.
+퍼블리셔(개발자, 학생회, 동아리)가 React 기반 미니앱을 만들면,<br/>
+대학생 사용자들이 하나의 앱 안에서 다양한 서비스를 이용할 수 있습니다.
+
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+
+[**퍼블리셔 대시보드 바로가기 →**](https://union-phi.vercel.app)
+
+</div>
 
 ## 왜 Union인가?
 
@@ -15,17 +28,17 @@ AI와 바이브 코딩의 발전으로 누구나 소프트웨어를 만들 수 �
 
 ## 아키텍처
 
-```
-퍼블리셔 (React 미니앱 개발)
-    ↓ Union CLI (build & upload)
-Publisher Dashboard (등록/심사/애널리틱스)
-    ↓ Backend API
-CDN (미니앱 번들 배포)
-    ↓
-Union App (iOS/Android)
-    └─ WebView 컨테이너
-        └─ 미니앱 실행 ← Union SDK (Bridge)
-            └─ 네이티브 기능 (인증, 카메라, 위치, 저장소 등)
+```mermaid
+flowchart TD
+    PUB["👩‍💻 퍼블리셔<br/>(React 미니앱 개발)"] -->|union CLI · build & upload| DASH["Publisher Dashboard<br/>(등록 · 심사 · 애널리틱스)"]
+    DASH --> API["Backend API<br/>(Spring Boot)"]
+    API --> CDN["GCS + Cloud CDN<br/>(미니앱 번들 배포)"]
+    CDN --> APP
+
+    subgraph APP["📱 Union App (iOS/Android)"]
+        WV["WebView 컨테이너 — 미니앱 실행"]
+        WV <-->|Union SDK Bridge| NATIVE["네이티브 기능<br/>(인증 · 카메라 · 위치 · 저장소)"]
+    end
 ```
 
 ## 레포지토리
@@ -48,14 +61,14 @@ Union App (iOS/Android)
 | Dashboard | Next.js |
 | 미니앱 런타임 | React → WebView |
 | 인증 | 학교 이메일 인증 + JWT (access/refresh) · 미니앱은 RS256 ID 토큰 (JWKS 검증) |
-| 배포 | CDN (정적 번들 서빙) |
+| 배포 | Cloud Run (API) · GCS + Cloud CDN (미니앱 번들) · Vercel (대시보드) |
 
 ## 팀원
 
 | 이름 | GitHub | 역할 | 담당 |
 |------|--------|------|------|
 | 송준서 (팀장) | [@JunSeo99](https://github.com/JunSeo99) | App Frontend + SDK | iOS 앱 (SwiftUI/TCA), Bridge SDK, CLI |
-| 조성빈 | [@ricky00](https://github.com/ricky00) | Backend | Spring Boot API 서버 |
+| 조성빈 | [@ricky00-dev](https://github.com/ricky00-dev) | Backend | Spring Boot API 서버 |
 | 이용찬 | [@lee-y-ch](https://github.com/lee-y-ch) | Publisher Frontend | 퍼블리셔 대시보드 (Next.js) |
 | 이장원 | [@jangwonii](https://github.com/jangwonii) | Admin Frontend | 관리자 대시보드 (Next.js) |
 
