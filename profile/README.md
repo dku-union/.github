@@ -47,7 +47,7 @@ Union App (iOS/Android)
 | Backend | Spring Boot / PostgreSQL / Redis |
 | Dashboard | Next.js |
 | 미니앱 런타임 | React → WebView |
-| 인증 | OAuth 2.0 + mTLS |
+| 인증 | 학교 이메일 인증 + JWT (access/refresh) · 미니앱은 RS256 ID 토큰 (JWKS 검증) |
 | 배포 | CDN (정적 번들 서빙) |
 
 ## 팀원
